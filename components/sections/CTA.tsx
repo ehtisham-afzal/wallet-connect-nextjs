@@ -1,0 +1,29 @@
+import { motion } from "framer-motion";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import PulsatingButton from "@/components/magicui/pulsating-button";
+
+export default function CTA() {
+  return (
+<section className="py-14 relative overflow-hidden bg-gradient-to-br from-gray-200 rounded-xl to-gray-500">
+<BorderBeam className="absolute inset-0 border-2" colorFrom="black" colorTo="white" />
+            <div className="max-w-screen-xl mx-auto px-4 md:text-center md:px-8">
+                <div className="max-w-xl md:mx-auto">
+                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                        Build the future with us
+                    </h3>
+                    <p className="mt-3 text-gray-600">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.
+                    </p>
+                </div>
+                <div className="flex gap-3 items-center mt-4 md:justify-center">
+                    <a href="javascript:void(0)" className="inline-block py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-lg shadow-md hover:shadow-none">
+                        Get started
+                    </a>
+                    <a href="javascript:void(0)" className="inline-block py-2 px-4 text-gray-800 font-medium duration-150 border hover:bg-gray-50 active:bg-gray-100 rounded-lg">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+        </section>
+  );
+}
